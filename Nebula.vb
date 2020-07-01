@@ -18,9 +18,13 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Go.Click
         WebBrowser1.GoForward()
 
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        WebBrowser1.Navigate(TextBox1.Text)
     End Sub
 End Class
